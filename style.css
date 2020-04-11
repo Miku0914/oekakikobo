@@ -21,8 +21,9 @@ body {
 h2 {
     font-size: 40px;
 }
-h3{
-    font-size:30px;
+
+h3 {
+    font-size: 30px;
 }
 
 .sec {
@@ -37,20 +38,24 @@ h3{
 .wordbox p {
     line-height: 2em;
 }
-.sec{
+
+.sec {
     position: relative;
 }
-.line{
+
+.line {
     position: absolute;
-    top:15px;
+    top: 15px;
     left: 0;
-    z-index:-5;
-    
+    z-index: -5;
+
 }
-.sec h2{
+
+.sec h2 {
     z-index: 0;
 }
-.sec h3{
+
+.sec h3 {
     z-index: 0;
 }
 
@@ -221,7 +226,7 @@ h3{
 }
 
 /* sec4創像工房とは */
-#toiawase{
+#toiawase {
     text-align: right;
 }
 
@@ -301,10 +306,11 @@ ul {
     background: #FFF url("mail.png") no-repeat;
     background-size: contain;
 }
-#icon5{
+
+#icon5 {
     width: 100px;
     display: block;
-    margin: 0 auto;
+    margin: 10vh auto;
 }
 
 /* お問い合わせマウスホバー時 */
@@ -320,7 +326,7 @@ ul {
     border: solid 1px #85eee9;
     background: #85eee9 url("hph.png") no-repeat;
     background-size: contain;
-    
+
 }
 
 
@@ -401,16 +407,60 @@ ul.snsbtniti {
     border-radius: 20px;
     text-align: center;
 }
-.picbox{
+
+.picbox {
     width: 45%;
 }
-.picbox img{
+
+.picbox img {
     width: 100%;
     display: block;
-   float: left;
+    float: left;
     margin: 2%;
 }
-.gallary{
-    height:auto;
+
+.gallary {
+    height: auto;
     margin-bottom: 100px;
+}
+
+.fuwatAnime {
+    -webkit-animation-fill-mode: both;
+    -ms-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-animation-duration: 1.5s;
+    -ms-animation-duration: 1.5s;
+    animation-duration: 1.5s;
+    -webkit-animation-name: fuwatAnime;
+    -ms-animation-name: fuwatAnime;
+    animation-name: fuwatAnime;
+    visibility: visible !important;
+}
+
+@-webkit-keyframes fuwatAnime {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateY(-20px);
+    }
+
+    100% {
+        opacity: 1;
+        -webkit-transform: translateY(0);
+    }
+}
+
+@keyframes fuwatAnime {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateY(-20px);
+        -ms-transform: translateY(-20px);
+        transform: translateY(-20px);
+    }
+
+    100% {
+        opacity: 1;
+        -webkit-transform: translateY(0);
+        -ms-transform: translateY(0);
+        transform: translateY(0);
+    }
 }
