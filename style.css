@@ -1,0 +1,410 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.body {
+
+    margin-left: 20%;
+    margin-right: 20%;
+
+}
+
+body {
+    background: #FFFADE url(bg.png)0 0 no-repeat;
+    background-size: cover;
+    color: #42210B;
+    font-family: 'TsukuARdGothic-Regular', 'TsukuBRdGothic-Regular', 'Meiryo UI', 'Hiragino Kaku Gothic ProN', 'ヒラギノ角ゴ ProN W3', sans-serif;
+    font-weight: bold;
+}
+
+h2 {
+    font-size: 40px;
+}
+
+.sec {
+    height: 100vh;
+}
+
+.wordbox {
+    width: 50vw;
+    margin: 0 auto;
+}
+
+.wordbox p {
+    line-height: 2em;
+}
+.sec{
+    position: relative;
+}
+.line{
+    position: absolute;
+    top:15px;
+    left: 0;
+    z-index:-5;
+    
+}
+.sec h2{
+    z-index: 0;
+}
+
+/*menu*/
+.menu-btn {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 2;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /*background: #fff;*/
+    color: #42210B;
+    margin-top: 20px;
+    margin-right: 20px;
+}
+
+.menu-btn img {
+    width: 100%;
+}
+
+/*----------------------------
+* メニュー本体
+*----------------------------*/
+.menu {
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 1;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: rgba(255, 255, 255, 0.8);
+
+}
+
+.menu__item {
+    width: 100%;
+    height: auto;
+    padding: .5em 1em;
+    text-align: center;
+    color: #42210B;
+    box-sizing: border-box;
+    font-size: 30px;
+
+}
+
+.menu a {
+    text-decoration: none;
+    color: #42210B;
+}
+
+.menu a:hover {}
+
+
+/*----------------------------
+* アニメーション部分
+*----------------------------*/
+
+/* アニメーション前のメニューの状態 */
+.menu {
+    transform: translateX(100vw);
+    transition: all .3s linear;
+}
+
+/* アニメーション後のメニューの状態 */
+.menu.is-active {
+    transform: translateX(0);
+}
+
+/**nemuanime*/
+@keyframes wave {
+    100% {
+        transform: translate3d(0, -10px, 0);
+    }
+}
+
+.wave {
+    display: block;
+    width: 300px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.wave span {
+    display: inline-block;
+
+
+}
+
+.wave:hover span {
+    animation-name: wave;
+    animation-duration: .2s;
+    animation-direction: alternate;
+    animation-iteration-count: 2;
+}
+
+.wave:hover span:nth-child(2) {
+    animation-delay: .1s;
+}
+
+.wave:hover span:nth-child(3) {
+    animation-delay: .2s;
+}
+
+.wave:hover span:nth-child(4) {
+    animation-delay: .3s;
+}
+
+.wave:hover span:nth-child(5) {
+    animation-delay: .4s;
+}
+
+.wave:hover span:nth-child(6) {
+    animation-delay: .5s;
+}
+
+.wave:hover span:nth-child(7) {
+    animation-delay: .6s;
+}
+
+/*メニューアニメーション*/
+
+
+/* sec1タイトル */
+#sec1 img {
+    display: block;
+    margin: 30vh auto;
+
+}
+
+
+/* sec2お絵描き工房とは */
+#logo img {
+    display: block;
+    margin: 5vh auto;
+}
+
+/* sec3ぎゃらり */
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: flex-start;
+    align-content: flex-start;
+}
+
+.container img {
+    display: block;
+    width: 90%;
+    margin: 20px auto;
+}
+
+.item {
+    width: 45%;
+    height: 400px;
+    background-color: rgba(255, 255, 255, 0.5);
+    margin: 1%;
+    padding: 1%;
+    border-radius: 20px;
+    text-align: center;
+}
+
+/* sec4創像工房とは */
+#toiawase{
+    text-align: right;
+}
+
+/* ボタン全体の装飾 */
+.flowbtn4 {
+    font-family: 'Trebuchet MS', sans-serif;
+    /* 好きなフォントに変えてね */
+    border-radius: 50%;
+    display: inline-block;
+    width: 80px;
+    height: 80px;
+    font-size: 25px;
+    transition: .5s;
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+    width: 23%;
+}
+
+/* ボタンマウスホバー時テキストカラー */
+.flowbtn4:hover {
+    color: #ff6a83 !important;
+}
+
+/* Twitter */
+.flowbtn4.fl_tw2 {
+    border: solid 1px #55acee;
+    color: #55acee;
+    background: url("twitter.png") no-repeat;
+    background-size: contain;
+}
+
+/* Twitterマウスホバー時 */
+.flowbtn4.fl_tw2:hover {
+    border: solid 1px #55acee;
+    background: #55acee url("twitterh.png")no-repeat;
+    background-size: contain;
+}
+
+/* Instagram */
+.flowbtn4.insta_btn2 {
+    border: solid 1px #c6529a;
+    color: #c6529a;
+    background: url("insta.png") no-repeat;
+    background-size: contain;
+}
+
+/* Instagramマウスホバー時 */
+.flowbtn4.insta_btn2:hover {
+    border: solid 1px #c6529a;
+    background: #c6529a url("instah.png")no-repeat;
+    background-size: contain;
+}
+
+/* お問い合わせ */
+.flowbtn4.fl_ma2 {
+    border: solid 1px #f3981d;
+    color: #f3981d;
+    background: url("hp.png") no-repeat;
+    background-size: contain;
+}
+
+/* お問い合わせマウスホバー時 */
+.flowbtn4.fl_ma2:hover {
+    border: solid 1px #f3981d;
+    background: #f3981d url("hph.png") no-repeat;
+    background-size: contain;
+
+}
+
+
+.flowbtn4.fl_mail {
+    border: solid 1px #85eee9;
+    color: #85eee9;
+    background: #FFF url("mail.png") no-repeat;
+    background-size: contain;
+}
+#icon5{
+    width: 100px;
+    display: block;
+    margin: 0 auto;
+}
+
+/* お問い合わせマウスホバー時 */
+.flowbtn4.fl_mail:hover {
+    border: solid 1px #85eee9;
+    background: #85eee9 url("mailh.png") no-repeat;
+    background-size: contain;
+
+}
+
+/* お問い合わせマウスホバー時 */
+.flowbtn4.fl_ma3:hover {
+    border: solid 1px #85eee9;
+    background: #85eee9 url("hph.png") no-repeat;
+    background-size: contain;
+    
+}
+
+
+/* ボタン内テキスト調整 */
+.flowbtn4 div {
+    font-size: 11px;
+    font-weight: bold;
+    position: relative;
+    top: 80px;
+}
+
+/* ulタグの内側余白を０にする */
+ul.snsbtniti {
+    padding: 0 !important;
+    margin-top: 10vh;
+}
+
+/* ボタンの位置 */
+.snsbtniti {
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    height: 200px
+}
+
+/* ボタン同士の余白 */
+.snsbtniti li {
+    /*flex: 0 0 25%;*/
+    text-align: center !important;
+}
+
+
+/* sec5お問い合わせ */
+.footer {
+    background-color: #ff6a83;
+    color: #fff;
+}
+
+.footer p {
+    text-align: center;
+}
+
+
+/*ギャラリ*/
+#sec6 img {
+    display: block;
+    margin: 0 auto 20vh;
+
+
+}
+
+#sec6 h2 {
+    margin-top: 15vh;
+    text-align: center;
+}
+
+.gallary {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: flex-start;
+    align-content: flex-start;
+}
+
+.gallary img {
+    display: block;
+    width: 90%;
+    margin: 20px auto;
+}
+
+.sakuhin {
+    width: 80%;
+
+    background-color: rgba(255, 255, 255, 0.5);
+    margin: 5%;
+    padding: 1%;
+    border-radius: 20px;
+    text-align: center;
+}
+.picbox{
+    width: 45%;
+}
+.picbox img{
+    width: 100%;
+    display: block;
+   float: left;
+    margin: 2%;
+}
+.gallary{
+    height:auto;
+    margin-bottom: 100px;
+}
