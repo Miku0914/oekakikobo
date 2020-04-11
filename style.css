@@ -21,6 +21,9 @@ body {
 h2 {
     font-size: 40px;
 }
+h3{
+    font-size:30px;
+}
 
 .sec {
     height: 100vh;
@@ -45,6 +48,9 @@ h2 {
     
 }
 .sec h2{
+    z-index: 0;
+}
+.sec h3{
     z-index: 0;
 }
 
