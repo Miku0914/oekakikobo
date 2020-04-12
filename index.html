@@ -13,7 +13,13 @@
 </head>
 
 <body>
-    <div class="body">
+    <div id="loader-bg">
+        <div id="loader">
+            　<img src="loading1.gif" alt="" />
+            　<p>Loading...</p>
+        </div>
+    </div>
+    <div class="body" 　id="contens">
         <div class="header">
 
         </div>
@@ -94,7 +100,7 @@
                         創像工房の多岐に渡る自由な活動の一つとして受け入れていただければ幸いです。
                     </p>
                 </div>
-                <div class="fuwat"id="logo"><img src="maintitle.png" alt="" width="50%"></div>
+                <div class="fuwat" id="logo"><img src="maintitle.png" alt="" width="50%"></div>
             </div>
             <div class="sec" id="sec3">
                 <h2 class=" fuwat">ギャラリー</h2>
@@ -143,22 +149,22 @@
             </div>
             <div class="sec" id="sec5">
                 <h3 class="fuwat">お絵描き工房・お絵描き工房サイトへのお問い合わせ</h3>
-                    <div class="line fuwat"><img src="pinkline.png" alt="" width="50%"></div>
-                    <div class=" fuwat"id="icon5">
-                        <a href="https://mail.google.com/mail/?view=cm&to=abenosyoumei@gmail.com&su=お絵描き工房お問い合わせ&body= お絵描き工房サイトからのお問い合わせ" class="flowbtn4 fl_mail" target="_blank"><i class="far fa-envelope"></i>
-                            <div>メール</div>
-                        </a>
-                        <p></p>
-                    </div>
+                <div class="line fuwat"><img src="pinkline.png" alt="" width="50%"></div>
+                <div class=" fuwat" id="icon5">
+                    <a href="https://mail.google.com/mail/?view=cm&to=abenosyoumei@gmail.com&su=お絵描き工房お問い合わせ&body= お絵描き工房サイトからのお問い合わせ" class="flowbtn4 fl_mail" target="_blank"><i class="far fa-envelope"></i>
+                        <div>メール</div>
+                    </a>
+                    <p></p>
+                </div>
 
-                    <h2 class=" fuwat">staffs</h2>
-                    <div class="line fuwat"><img src="pinkline.png" alt="" width="50%"></div>
-                    <div class="wordbox fuwat">
-                        <p>イラスト・作品：ありがともこ　うちだ
-                            みすず　ごとうじゅん　たなかあやは　はらるりこ　まるおかみう　みずのはるか　みたにしょうた　むらかみきょうこ　やしろみく
-                            <br>
-                            ロゴ・サイト作成・企画　屋代 美紅</p>
-                    </div>
+                <h2 class=" fuwat">staffs</h2>
+                <div class="line fuwat"><img src="pinkline.png" alt="" width="50%"></div>
+                <div class="wordbox fuwat">
+                    <p>イラスト・作品：ありがともこ　うちだ
+                        みすず　ごとうじゅん　たなかあやは　はらるりこ　まるおかみう　みずのはるか　みたにしょうた　むらかみきょうこ　やしろみく
+                        <br>
+                        ロゴ・サイト作成・企画　屋代 美紅</p>
+                </div>
 
             </div>
 
@@ -169,6 +175,18 @@
     </div>
 </body>
 <script>
+    $(function() {
+        var h = $(window).height(); // ブラウザウィンドウの高さを取得する
+        $('#contents').css('display', 'none'); // コンテンツを非表示にする
+        $('#loader-bg ,#loader').height(h).css('display', 'block'); //ローディング画像を表示
+    });
+    $(window).on('load', function() { // 読み込み完了したら実行する
+        $('#loader-bg').delay(900).fadeOut(800); // ローディングを隠す
+        $('#loader').delay(600).fadeOut(300);
+        $('#contens').css('display', 'block'); // コンテンツを表示する
+    });
+    
+    
     $(function() {
             $('.menu-btn').on('click', function() {
                     $('.menu').toggleClass('is-active');
