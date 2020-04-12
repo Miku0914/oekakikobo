@@ -83,8 +83,7 @@ h3 {
     z-index: 2;
 }
 #loader img{
-    -webkit-background-size: contain;
-    background-size: cover;
+   width: 100%;
 }
 /*menu*/
 .menu-btn {
