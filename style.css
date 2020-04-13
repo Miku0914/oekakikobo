@@ -10,6 +10,12 @@
 
 }
 
+@media screen and (max-width: 480px) {
+    .body {
+        margin: 0;
+    }
+}
+
 body {
     background: #FFFADE url(bg2.png)0 0 no-repeat;
     background-size: cover;
@@ -20,6 +26,15 @@ body {
 
 h2 {
     font-size: 40px;
+}
+
+@media screen and (max-width: 480px) {
+    h2 {
+        font-size: 30px;
+    }
+    p{
+        font-size: 20px;
+    }
 }
 
 h3 {
@@ -33,6 +48,17 @@ h3 {
 .wordbox {
     width: 50vw;
     margin: 5vh auto;
+}
+
+@media screen and (max-width: 480px) {
+    .wordbox {
+        margin: 5vh 5vh;
+        width: 80vw;
+
+    }
+    .sec {
+    height: 150vh;
+}
 }
 
 .wordbox p {
@@ -69,22 +95,29 @@ h3 {
     background-color: #fff;
     z-index: 1;
 }
+
 #loader {
     display: none;
     position: fixed;
-    top: 50%;
-    left: 50%;
-    width: 200px;
-    height: 200px;
-    margin-top: -100px;
-    margin-left: -100px;
+    top: 40%;
+    left: 40%;
+    width: 80%;
+    height: 40%;
+
+    margin-top: -20vh;
+    margin-left: -25vw;
     text-align: center;
     color: #fff;
     z-index: 2;
 }
-#loader img{
-   width: 100%;
+
+#loader img {
+    width: 50vw;
+    display: block;
+    margin: 0 10vw;
+    float: left;
 }
+
 /*menu*/
 .menu-btn {
     position: fixed;
@@ -235,6 +268,7 @@ h3 {
     align-content: flex-start;
 }
 
+
 .container img {
     display: block;
     width: 90%;
@@ -249,6 +283,14 @@ h3 {
     padding: 1%;
     border-radius: 20px;
     text-align: center;
+}
+@media screen and (max-width: 480px){
+    .item{
+        height: 250px;
+    }
+    .item p{
+        font-size: 16px;
+    }
 }
 
 /* sec4創像工房とは */
@@ -449,7 +491,11 @@ ul.snsbtniti {
     height: auto;
     margin-bottom: 100px;
 }
-
+@media screen and (max-width: 480px){
+    .body {
+        margin: 0;
+    }
+}
 .fuwatAnime {
     -webkit-animation-fill-mode: both;
     -ms-animation-fill-mode: both;
