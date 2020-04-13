@@ -33,7 +33,10 @@ h2 {
         font-size: 30px;
     }
     p{
-        font-size: 20px;
+        font-size: 16px;
+    }
+    body{
+        font-weight:normal;
     }
 }
 
@@ -56,9 +59,7 @@ h3 {
         width: 80vw;
 
     }
-    .sec {
-    height: 150vh;
-}
+    
 }
 
 .wordbox p {
@@ -421,6 +422,14 @@ ul.snsbtniti {
     height: 200px
 }
 
+@media screen and (max-width: 480px){
+   ul.snsbtniti  {
+    margin-top: 0;
+}
+    #toiawase{
+        margin: 0;
+    }
+}
 /* ボタン同士の余白 */
 .snsbtniti li {
     /*flex: 0 0 25%;*/
