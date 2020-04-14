@@ -505,11 +505,21 @@ ul.snsbtniti {
     width: 45%;
 }
 
+
 .picbox img {
     width: 100%;
     display: block;
     float: left;
-    margin: 2%;
+    margin: 10% 2%;
+}
+@media screen and (max-width: 480px){
+   .picbox {
+    width: 40%;
+} 
+    .picbox img{
+        margin:18% 4%;
+    }
+    
 }
 
 .gallary {
