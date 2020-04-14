@@ -51,8 +51,8 @@ h3 {
 
 @media screen and (max-width: 480px) {
     .wordbox {
-        margin: 5vh 5vh;
-        width: 80vw;
+        margin: 5vh 5vw;
+        width: 90vw;
 
     }
     
@@ -130,6 +130,14 @@ h3 {
     color: #42210B;
     margin-top: 20px;
     margin-right: 20px;
+}
+@media screen and (max-width: 480px){
+    .menu-btn{
+        top: 0;
+        right: 0;
+        width: 30px;
+height: 30px;
+    }
 }
 
 .menu-btn img {
@@ -293,6 +301,8 @@ h3 {
 /* sec4創像工房とは */
 #toiawase {
     text-align: right;
+    font-size: 10px;
+    margin: 0;
 }
 
 /* ボタン全体の装飾 */
@@ -302,7 +312,7 @@ h3 {
     border-radius: 50%;
     display: inline-block;
     width: 80px;
-    height: 80px;
+    height:80px;
     font-size: 25px;
     transition: .5s;
     text-decoration: none;
