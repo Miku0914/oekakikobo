@@ -434,6 +434,7 @@ ul.snsbtniti {
 @media screen and (max-width: 480px){
    ul.snsbtniti  {
     margin-top: 0;
+       height: 120px;
 }
     #toiawase{
         margin: 0;
@@ -444,6 +445,12 @@ ul.snsbtniti {
     /*flex: 0 0 25%;*/
     text-align: center !important;
 }
+@media screen and (max-width: 480px){
+    .snsbtniti li{
+        height: 100px;
+    }
+}
+
 
 
 /* sec5お問い合わせ */
