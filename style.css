@@ -10,11 +10,7 @@
 
 }
 
-@media screen and (max-width: 480px) {
-    .body {
-        margin: 0;
-    }
-}
+
 
 body {
     background: #FFFADE url(bg2.png)0 0 no-repeat;
@@ -500,11 +496,26 @@ ul.snsbtniti {
     height: auto;
     margin-bottom: 100px;
 }
+/*.bodycontent{
+    margin-left: 20%;
+    margin-right: 20%;
+}
 @media screen and (max-width: 480px){
-    .body {
+    .bodycontent {
+        margin: 0;
+       
+    }
+}*/
+@media screen and (max-width: 480px){
+    /*.bodycontent{
+        margin: 0;
+    }*/
+    .body{
+        width: 100vw;
         margin: 0;
     }
 }
+
 .fuwatAnime {
     -webkit-animation-fill-mode: both;
     -ms-animation-fill-mode: both;
